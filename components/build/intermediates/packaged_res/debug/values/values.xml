@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_placeholder">#303337</color>
+    <color name="black_32">#51000000</color>
+    <color name="black_48">#7a000000</color>
+    <color name="black_80">#cc000000</color>
+    <color name="colorAccent">#303030</color>
+    <color name="colorPrimary">#e14b4b</color>
+    <color name="colorPrimaryDark">#cc3333</color>
+    <dimen name="carousel_height">240dp</dimen>
+    <dimen name="cover_height">210dp</dimen>
+    <dimen name="cover_image_height">160dp</dimen>
+    <dimen name="cover_width">140dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="text_10">10sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <style name="RodriguesAlex"/>
+    <style name="RodriguesAlex.MarvelApp"/>
+    <style name="RodriguesAlex.MarvelApp.Components"/>
+    <style name="RodriguesAlex.MarvelApp.ItemTitle">
+        <item name="android:textSize">@dimen/text_10</item>
+        <item name="android:textColor">@color/black_80</item>
+    </style>
+    <style name="RodriguesAlex.MarvelApp.SectionTitle">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/black_80</item>
+    </style>
+    <declare-styleable name="SectionView">
+        <attr format="string" name="sectionTitle"/>
+    </declare-styleable>
+</resources>

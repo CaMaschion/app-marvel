@@ -1,0 +1,14 @@
+br/com/rodriguesalex/components/BuildConfig.java
+ br.com.rodriguesalex.components.BuildConfig
+br/com/rodriguesalex/components/BR.java
+ br.com.rodriguesalex.components.BR
+br/com/rodriguesalex/components/DataBinderMapperImpl.java
+ br.com.rodriguesalex.components.DataBinderMapperImpl
+ br.com.rodriguesalex.components.DataBinderMapperImpl$InnerBrLookup
+ br.com.rodriguesalex.components.DataBinderMapperImpl$InnerLayoutIdLookup
+br/com/rodriguesalex/components/DataBindingTriggerClass.java
+ br.com.rodriguesalex.components.DataBindingTriggerClass
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent

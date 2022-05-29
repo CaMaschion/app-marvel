@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+attr? sectionTitle
+color bg_placeholder
+color black_32
+color black_48
+color black_80
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+dimen carousel_height
+dimen cover_height
+dimen cover_image_height
+dimen cover_width
+dimen space_16
+dimen space_4
+dimen space_8
+dimen text_10
+dimen text_12
+dimen text_14
+dimen text_16
+id ivItemImage
+id rvSectionItems
+id tvItemTitle
+id tvSectionTitle
+layout view_component_section
+layout view_component_section_item
+style RodriguesAlex
+style RodriguesAlex.MarvelApp
+style RodriguesAlex.MarvelApp.Components
+style RodriguesAlex.MarvelApp.ItemTitle
+style RodriguesAlex.MarvelApp.SectionTitle
+styleable SectionView sectionTitle
