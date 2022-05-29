@@ -1,6 +1,6 @@
 <p align="center">
 
-<h3 align="center">Android's Marvel App by Alex Rodrigues</h3>
+<h3 align="center">Android's Marvel App </h3>
 
 <div align="center">
 
