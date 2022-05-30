@@ -41,8 +41,8 @@ class HomeAdapter(
 
             view.tvHomeTitle.text = vo.name
 
-        //    view.tvHomeDescription.text =
-        //        vo.description.ifEmpty { view.resources.getString(R.string.lorem_ipsum) }
+            view.tvHomeDescription.text =
+                vo.description.ifEmpty { view.resources.getString(R.string.lorem_ipsum) }
         }
     }
 }

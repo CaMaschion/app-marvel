@@ -43,6 +43,15 @@
                 style="@style/TextAppearance.AppCompat.Headline"
                 tools:text="Spider man" />
 
+            <TextView
+                android:id="@+id/tvHomeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_16"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                tools:text="@string/lorem_ipsum" />
+
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

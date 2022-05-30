@@ -1,6 +1,7 @@
 package com.rodriguesalex.marvelsdk.di.network
 
 import com.rodriguesalex.marvelsdk.characters.service.CharacterService
+import com.rodriguesalex.marvelsdk.detail.service.DetailService
 import com.rodriguesalex.marvelsdk.di.network.interceptor.MarvelInterceptor
 import dagger.Module
 import dagger.Provides
@@ -36,6 +37,11 @@ internal class NetworkModule {
     @Singleton
     fun provideCharacterService(retrofit: Retrofit): CharacterService =
         retrofit.create(CharacterService::class.java)
+
+    @Provides
+    @Singleton
+    fun provideDetailService(retrofit: Retrofit): DetailService =
+        retrofit.create(DetailService::class.java)
 
     @Singleton
     @Provides

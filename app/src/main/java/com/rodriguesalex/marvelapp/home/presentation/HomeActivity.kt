@@ -37,7 +37,7 @@ class HomeActivity : BaseActivity() {
                         layoutManager = LinearLayoutManager(this@HomeActivity)
                         adapter = HomeAdapter(state.list){
                             val intent = Intent(context, DetailActivity::class.java)
-                            intent.putExtra("descrição", "personagem")
+                            intent.putExtra("id", it.id)
                             startActivity(intent)
                         }
                     }

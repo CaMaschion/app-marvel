@@ -13,7 +13,7 @@ fun MarvelCharacter.toVo(): HomeCharacterVO =
     HomeCharacterVO(
         id = id ?: "",
         name = name ?: "John Doe",
-       // description = description ?: "",
+        description = description ?: "",
         urlImage = thumbnail?.toUri() ?: ""
     )
 

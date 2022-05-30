@@ -2,13 +2,12 @@ package com.rodriguesalex.marvelapp.detail.presentation
 
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
 import com.rodriguesalex.commoms.base.BaseActivity
 import com.rodriguesalex.marvelapp.R
 import com.rodriguesalex.marvelapp.databinding.ActivityDetailBinding
-import com.rodriguesalex.marvelapp.databinding.ActivityHomeBinding
 import com.rodriguesalex.marvelapp.detail.viewmodel.DetailViewModel
-import com.rodriguesalex.marvelapp.home.viewmodel.HomeViewModel
-import kotlinx.android.synthetic.main.activity_detail.*
+import com.rodriguesalex.marvelapp.detail.viewmodel.DetailViewModelState
 
 class DetailActivity : BaseActivity() {
 
@@ -23,10 +22,18 @@ class DetailActivity : BaseActivity() {
             vm = viewModel
         }
 
-        val extras = intent.extras
-        val teste = extras?.getString("descrição")
+        setupObservers()
+    }
 
-        descriptionTextView.text = (teste)
+    private fun setupObservers() {
+        viewModel.state.observe(this, Observer { state ->
+            when (state) {
+                is DetailViewModelState.Loaded ->
+                binding.descriptionTextView.apply {
+                    text = state.description.toString()
+                }
+            }
+        })
     }
 
 }
